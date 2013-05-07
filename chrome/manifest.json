@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+
+	"name": "Wikipedia Mobile 4 Ever!",
+	"description": "Never see desktop wikipedia again",
+	"version": "1.0",
+	"content_scripts": [{
+		"matches": [ "*://*.wikipedia.org/*" ],
+		"js": [ "main.js" ],
+		"run_at": "document_start"
+	}]
+}
