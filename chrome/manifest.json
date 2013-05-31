@@ -5,7 +5,10 @@
 	"description": "Never see desktop wikipedia again",
 	"version": "1.0",
 	"content_scripts": [{
-		"matches": [ "*://*.wikipedia.org/*", "*://www.mediawiki.org/*", "*://*.wikimedia.org/*" ],
+		"matches": [ "*://*.wikipedia.org/*", "*://www.mediawiki.org/*",
+			"*://meta.wikimedia.org/*",
+			"*://commons.wikimedia.org/*"
+		],
 		"js": [ "main.js" ],
 		"run_at": "document_start"
 	}]
